@@ -4,32 +4,36 @@
     <meta charset="utf-8">
     <title>Note Manager</title>
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   </head>
   <body>
     <section class = 'a-top'>
     <div class = 'top'>
       <h1 class = "b-top">Note Manager</h1>
-      <input class="search" type="text" name="note-manager" placeholder="Search note..." value="">
+      <input class="search indent" type="text" name="note-manager" placeholder="Search note..." value="">
     </div>
       <ul class="b-notes mix">
         <div class="notes">
-              <li class="note">First note</li>
+              <li id="todo" class="note">First note<span style = "float:right;"><i class="fa fa-pencil-square-o"></i><i id="remove" class="fa fa-times"></i></span></li>
         </div>
-        <div class="notes mix">
-              <li class="note">Second note</li>
+<!--        <div class="notes mix">
+              <li id="todo" class="note">Second note<span style = "float:right;"><i class="fa fa-pencil-square-o"></i><i class="fa fa-times"></i></span></li>
         </div>
-        <div class="notes mix">
-              <li class="note">Third note</li>
+        <div id="todo" class="notes mix">
+              <li id="todo" class="note">Third note<span style = "float:right;"><i class="fa fa-pencil-square-o"></i><i class="fa fa-times"></i></span></li>
         </div>
         <div class="hide-note mix">
               <li class="hide-notes">Hide notes</li>
         </div>
       </ul>
-        <div class="search-bar">
-        <input class = 'a-search' type="text" name="add-note" placeholder="Add a note..." value="">
-        <button type="button" name="Add">Add</button>
+  -->      <div class="search-bar">
+        <input id="item" class= 'a-search' type="text" name="add-note" placeholder="Add a note..." value="">
+        <button id='add' class="box">
+          Add
+        </button>
         </div>
     </section>
+    <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
